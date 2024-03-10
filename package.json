@@ -1,0 +1,32 @@
+{
+  "name": "simple-app",
+  "version": "0.1.0",
+  "bin": {
+    "simple-app": "bin/simple-app.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "cdk": "cdk",
+    "schema": "typescript-json-schema --noExtraProps --required --refs false -o ./shared/types.schema.json  \"./shared/types.d.ts\" \"*\""
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.93",
+    "@types/node": "20.4.2",
+    "aws-cdk": "2.88.0",
+    "esbuild": "^0.18.17",
+    "ts-node": "^10.9.1",
+    "typescript": "~4.9.5",
+    "typescript-json-schema": "^0.63.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.67.0",
+    "@aws-sdk/client-sqs": "^3.360.0",
+    "@aws-sdk/lib-dynamodb": "^3.79.0",
+    "@aws-sdk/util-dynamodb": "^3.303.0",
+    "ajv": "^8.12.0",
+    "aws-cdk-lib": "2.88.0",
+    "constructs": "^10.0.0",
+    "source-map-support": "^0.5.21"
+  }
+}
