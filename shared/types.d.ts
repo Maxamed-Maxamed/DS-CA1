@@ -18,23 +18,22 @@ export type Movie =   {
 }
 
 
-export type MovieCast = {
-  movieId: number;
-  actorName: string;
-  roleName: string;
-  roleDescription: string;
-};
+// export type MovieCast = {
+//   movieId: number;
+//   actorName: string;
+//   roleName: string;
+//   roleDescription: string;
+// };
 // Used to validate the query string og HTTP Get requests
-export type MovieCastMemberQueryParams = {
-  movieId: string;
-  actorName?: string;
-  roleName?: string
-}
+// export type MovieCastMemberQueryParams = {
+//   movieId: string;
+//   actorName?: string;
+//   roleName?: string
+// }
 
 export type MovieReview = {
-  reviewId: number;
   movieId: number;
-  reviewer: string;
+  ReviewerName : string;
   reviewDate: string;
   content: string;
   rating: number;
