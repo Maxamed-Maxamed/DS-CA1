@@ -68,51 +68,12 @@
             ],
             "type": "object"
         },
-        "MovieCast": {
-            "additionalProperties": false,
-            "properties": {
-                "actorName": {
-                    "type": "string"
-                },
-                "movieId": {
-                    "type": "number"
-                },
-                "roleDescription": {
-                    "type": "string"
-                },
-                "roleName": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "actorName",
-                "movieId",
-                "roleDescription",
-                "roleName"
-            ],
-            "type": "object"
-        },
-        "MovieCastMemberQueryParams": {
-            "additionalProperties": false,
-            "properties": {
-                "actorName": {
-                    "type": "string"
-                },
-                "movieId": {
-                    "type": "string"
-                },
-                "roleName": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "movieId"
-            ],
-            "type": "object"
-        },
         "MovieReview": {
             "additionalProperties": false,
             "properties": {
+                "ReviewerName": {
+                    "type": "string"
+                },
                 "content": {
                     "type": "string"
                 },
@@ -124,21 +85,14 @@
                 },
                 "reviewDate": {
                     "type": "string"
-                },
-                "reviewId": {
-                    "type": "number"
-                },
-                "reviewer": {
-                    "type": "string"
                 }
             },
             "required": [
+                "ReviewerName",
                 "content",
                 "movieId",
                 "rating",
-                "reviewDate",
-                "reviewId",
-                "reviewer"
+                "reviewDate"
             ],
             "type": "object"
         }

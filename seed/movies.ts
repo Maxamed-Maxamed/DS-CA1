@@ -70,21 +70,21 @@ export const movieReviews: MovieReview[] = [
   {
     
     movieId: 1234,
-    ReviewerName: "John Doe",
+    ReviewerName: "John",
     reviewDate: "11/03/2024",
     content: "Great movie, loved the action scenes!",
     rating: 4.5,
   },
   {
     movieId: 1234,
-    ReviewerName: "Brian Smith",
+    ReviewerName: "Brian",
     reviewDate: "12/03/2024",
     content: "The plot was a bit predictable, but overall enjoyable.",
     rating: 3.0,
   },
   {
     movieId: 2345,
-    ReviewerName : "David Johnson",
+    ReviewerName : "David",
     reviewDate: "13/03/2024",
     content: "Absolutely loved it! Can't wait for the sequel.",
     rating: 5.0,
