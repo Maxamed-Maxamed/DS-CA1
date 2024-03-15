@@ -109,6 +109,38 @@
                 "movieId"
             ],
             "type": "object"
+        },
+        "MovieReview": {
+            "additionalProperties": false,
+            "properties": {
+                "content": {
+                    "type": "string"
+                },
+                "movieId": {
+                    "type": "number"
+                },
+                "rating": {
+                    "type": "number"
+                },
+                "reviewDate": {
+                    "type": "string"
+                },
+                "reviewId": {
+                    "type": "number"
+                },
+                "reviewer": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "content",
+                "movieId",
+                "rating",
+                "reviewDate",
+                "reviewId",
+                "reviewer"
+            ],
+            "type": "object"
         }
     }
 }
